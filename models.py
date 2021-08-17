@@ -14,10 +14,11 @@ from elasticsearch_dsl import (
 from elasticsearch_dsl.connections import connections
 from elasticsearch_dsl.query import Match, Term
 import collections
+import os
 import requests
 
 
-connections.create_connection(hosts=['localhost:9200'])
+connections.create_connection(hosts=[os.getenv('ELASTIC_HOST')])
 
 class Stock(Document):
     stock_symbol = Keyword()
