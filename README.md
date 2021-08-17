@@ -12,4 +12,7 @@ This endpoin is to get an api key. Make sure to pass a valid email domain. Examp
     }  
 
 ### /symbol/{symbol_name}  
-This endpoint gives me info about last 30 days of any stock in the market including open price, higher price, lower price, closing price and difference between current day closing price and previous day closing price.
+This endpoint gives info about last 30 days of any stock in the market.The Info includes open price, higher price, lower price, closing price and difference between current day closing price and previous day closing price.  
+
+### To watch full documentation on the endpoints please visit:
+https://andres-stock-market-api.herokuapp.com/docs
